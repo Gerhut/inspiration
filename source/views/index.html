@@ -25,68 +25,8 @@
     <div class="row">
         <div class="col-sm-2 sidebar sidebar-css">
             <accordion>
-                <accordion-group heading="category1">
-                    <p>page</p>
-
-                    <p>page</p>
-
-                    <p>page</p>
-
-                    <p>page</p>
-                </accordion-group>
-                <accordion-group heading="category2">
-                    <p>page</p>
-
-                    <p>page</p>
-
-                    <p>page</p>
-
-                    <p>page</p>
-                </accordion-group>
-                <accordion-group heading="category3">
-                    <p>page</p>
-
-                    <p>page</p>
-
-                    <p>page</p>
-
-                    <p>page</p>
-                </accordion-group>
-                <accordion-group heading="category4">
-                    <p>page</p>
-
-                    <p>page</p>
-
-                    <p>page</p>
-
-                    <p>page</p>
-                </accordion-group>
-                <accordion-group heading="category5">
-                    <p>page</p>
-
-                    <p>page</p>
-
-                    <p>page</p>
-
-                    <p>page</p>
-                </accordion-group>
-                <accordion-group heading="category6">
-                    <p>page</p>
-
-                    <p>page</p>
-
-                    <p>page</p>
-
-                    <p>page</p>
-                </accordion-group>
-                <accordion-group heading="category7">
-                    <p>page</p>
-
-                    <p>page</p>
-
-                    <p>page</p>
-
-                    <p>page</p>
+                <accordion-group ng-controller="AnimationsController as animations" heading="category1">
+                    <p ng-repeat="item in animations.items" ng-bind="item"></p>
                 </accordion-group>
             </accordion>
         </div>
